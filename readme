@@ -1,16 +1,18 @@
-# CLO2_TB_KPL
+CLO2_TB_KPL
 
-## Deskripsi
+Description
+Aplikasi Unit Converter adalah aplikasi berbasis teks yang memungkinkan pengguna melakukan konversi antar berbagai unit (misalnya suhu, panjang, berat). Setiap fitur dikembangkan dalam modul terpisah sesuai jenis unit. Aplikasi ini memiliki desain modular agar setiap konversi dapat diimplementasikan secara mandiri dan mudah diuji.
+
 Aplikasi konversi unit modular: suhu, jarak, berat. Menerapkan Defensive Programming (DbC), Unit Testing, Performance Testing, dan teknik konstruksi (Table-driven, Automata, Code Reuse).
 
-## Struktur
+Structure
 - `temperature_converter.py`: Konversi suhu (Table-driven + DbC)
 - `distance_converter.py`: Konversi jarak (Code reuse + DbC)
 - `weight_converter.py`: Konversi berat (Automata + DbC)
 - `test_*.py`: Unit test
 - `perf_*.py`: Performance test
 
-## Menjalankan
+Running Code
 - `python main.py`
 - `python -m unittest discover`
 - `python perf_temperature_converter.py`
