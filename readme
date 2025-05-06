@@ -1,18 +1,10 @@
 CLO2_TB_KPL
 
 Description
-Aplikasi Unit Converter adalah aplikasi berbasis teks yang memungkinkan pengguna melakukan konversi antar berbagai unit (misalnya suhu, panjang, berat). Setiap fitur dikembangkan dalam modul terpisah sesuai jenis unit. Aplikasi ini memiliki desain modular agar setiap konversi dapat diimplementasikan secara mandiri dan mudah diuji.
+Aplikasi Antrian Bengkel adalah sistem berbasis CLI (Command Line Interface) yang digunakan untuk mengelola antrian pelanggan berdasarkan tingkat kerusakan kendaraan, yaitu ringan, sedang, dan berat. Sistem ini membantu petugas bengkel memprioritaskan layanan sesuai tingkat kerusakan dengan waktu layanan yang telah dikonfigurasi. Aplikasi ini dirancang modular, dapat diuji secara otomatis, dan mudah dikonfigurasi ulang melalui file eksternal.
 
-Aplikasi konversi unit modular: suhu, jarak, berat. Menerapkan Defensive Programming (DbC), Unit Testing, Performance Testing, dan teknik konstruksi (Table-driven, Automata, Code Reuse).
-
-Structure
-- `temperature_converter.py`: Konversi suhu (Table-driven + DbC)
-- `distance_converter.py`: Konversi jarak (Code reuse + DbC)
-- `weight_converter.py`: Konversi berat (Automata + DbC)
-- `test_*.py`: Unit test
-- `perf_*.py`: Performance test
+Aplikasi Manajemen Antrian Bengkel dirancang untuk mengatur pelanggan berdasarkan jenis kerusakan kendaraan (ringan, sedang, berat) dengan sistem antrian berbasis prioritas. Aplikasi ini berjalan di terminal (CLI), tanpa menggunakan GUI, namun tetap mendukung fitur yang fungsional dan terstruktur.
 
 Running Code
 - `python main.py`
 - `python -m unittest discover`
-- `python perf_temperature_converter.py`
