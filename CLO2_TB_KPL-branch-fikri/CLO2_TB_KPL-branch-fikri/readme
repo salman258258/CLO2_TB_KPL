@@ -1,0 +1,10 @@
+CLO2_TB_KPL
+
+Description
+Aplikasi Antrian Bengkel adalah sistem berbasis CLI (Command Line Interface) yang digunakan untuk mengelola antrian pelanggan berdasarkan tingkat kerusakan kendaraan, yaitu ringan, sedang, dan berat. Sistem ini membantu petugas bengkel memprioritaskan layanan sesuai tingkat kerusakan dengan waktu layanan yang telah dikonfigurasi. Aplikasi ini dirancang modular, dapat diuji secara otomatis, dan mudah dikonfigurasi ulang melalui file eksternal.
+
+Aplikasi Manajemen Antrian Bengkel dirancang untuk mengatur pelanggan berdasarkan jenis kerusakan kendaraan (ringan, sedang, berat) dengan sistem antrian berbasis prioritas. Aplikasi ini berjalan di terminal (CLI), tanpa menggunakan GUI, namun tetap mendukung fitur yang fungsional dan terstruktur.
+
+Running Code
+- `python main.py`
+- `python -m unittest discover`
