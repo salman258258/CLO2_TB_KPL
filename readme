@@ -1,0 +1,16 @@
+# CLO2_TB_KPL
+
+## Deskripsi
+Aplikasi konversi unit modular: suhu, jarak, berat. Menerapkan Defensive Programming (DbC), Unit Testing, Performance Testing, dan teknik konstruksi (Table-driven, Automata, Code Reuse).
+
+## Struktur
+- `temperature_converter.py`: Konversi suhu (Table-driven + DbC)
+- `distance_converter.py`: Konversi jarak (Code reuse + DbC)
+- `weight_converter.py`: Konversi berat (Automata + DbC)
+- `test_*.py`: Unit test
+- `perf_*.py`: Performance test
+
+## Menjalankan
+- `python main.py`
+- `python -m unittest discover`
+- `python perf_temperature_converter.py`
