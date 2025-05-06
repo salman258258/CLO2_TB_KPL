@@ -8,4 +8,3 @@ Aplikasi Manajemen Antrian Bengkel dirancang untuk mengatur pelanggan berdasarka
 Running Code
 - `python main.py`
 - `python -m unittest discover`
-- `python perf_temperature_converter.py`
