@@ -1,8 +1,13 @@
 {
-    "service_times": {
-      "ringan": 10,
-      "sedang": 20,
-      "berat": 30
-    },
-    "priority_order": ["berat", "sedang", "ringan"]
-  }
+  "service_times": {
+    "ringan": 10,
+    "sedang": 20,
+    "berat": 50,
+    "walawe": 40
+  },
+  "priority_order": [
+    "berat",
+    "sedang",
+    "ringan"
+  ]
+}

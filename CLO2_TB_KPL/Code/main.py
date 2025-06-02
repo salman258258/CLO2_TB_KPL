@@ -19,7 +19,7 @@ def tambah_antrian():
         queues[kerusakan].put(nama)
         print(f"{nama} ditambahkan ke antrian {kerusakan}.")
     else:
-        print("Jenis kerusakan tidak dikenal.")
+        print("Jenis kerusakan tidak dikenal.") #defensive
 
 def proses_antrian():
     for level in CONFIG["priority_order"]:
@@ -28,7 +28,7 @@ def proses_antrian():
             waktu = CONFIG["service_times"][level]
             print(f"Memproses {nama} dengan kerusakan {level} (estimasi {waktu} menit)")
             return
-    print("Tidak ada antrian.")
+    print("Tidak ada antrian.")#defensive
 
 def tampilkan_antrian():
     for level in CONFIG["priority_order"]:
@@ -55,7 +55,7 @@ def main():
         if action:
             action()
         else:
-            print("Pilihan tidak valid.")
+            print("Pilihan tidak valid.")#defensive
 
 if __name__ == "__main__":
     main()
